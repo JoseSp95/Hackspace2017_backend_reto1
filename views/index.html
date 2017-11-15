@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>	Carlos y sus amigos </title>
+    </head>
+    <body>
+        
+            <h1>{{titulo.titulo}}</h1>
+            
+            <h2>PERSONA</h2>
+            <p><b>Nombres: </b> {{persona.nombres}}</p>
+            <p><b>Apellidos: </b>{{persona.apellidos}}</p>
+            <p><b>Edad: </b>{{persona.edad}}</p>
+    
+            <h2>AMIGOS</h2>
+            {% for amigo in amigos %}
+            <article>	
+                <p><b>Nombres: </b> {{amigo.nombres}}</p>
+                <p><b>Apellidos: </b>{{amigo.apellidos}}</p>
+                <p><b>Edad: </b>{{amigo.edad}}</p>
+            </article>
+            <br>
+            {% endfor %}
+    </body>
+    </html>
